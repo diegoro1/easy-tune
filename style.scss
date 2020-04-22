@@ -1,5 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap');
+$text_color: white;
+$container_color: lightgrey;
+
+html 
+{ 
+    background: url(assets/macro-shot-audio-equalizer-744318.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+body
+{
+    font-family: 'Baloo Tamma 2', cursive;
+    margin: 0;
+    padding: 0;
+}
+
 nav
 {
     width: 100%;
     height: 10vh;
+
+    ul
+    {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 10px; 
+        //align-items: center;     
+
+        li
+        {
+            margin: 15px;
+            list-style: none;
+        }
+
+        .right-stick
+        {
+            margin-left: auto;
+        }
+
+        .left-stick
+        {
+            margin-right: auto;
+        }
+    }
+
+    img
+    {
+        width: 6em;
+        justify-self: center;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: $text_color;
+        font-size: 18px;
+
+    }
+    li:hover
+    {
+        transition: all .2s ease-in-out;
+        transform: scale(1.1);
+    }
+
 }
+
+#guitar-list
+{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 8em;
+    
+    .container
+    {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        margin-bottom: 5em;
+        img
+        {
+            width: 20em;
+            margin-bottom: 10px;
+        }
+        p
+        {
+            text-align: center;
+            font-size: 24px;
+            color: $text_color;
+        }
+
+        a
+        {
+            text-decoration: none;
+        }
+    }
+    .container:hover
+    {
+        transition: all .2s ease-in-out;
+        transform: scale(1.1);
+    }
+}
+
+#tuner-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    height: 90vh;
+
+    #menu
+    {
+        background-color: $container_color;
+        opacity: .5;
+        width: 65%;
+        height: 80%;
+        border: solid grey 3px;
+        border-radius: 15px;
+    }
+}
+
+
